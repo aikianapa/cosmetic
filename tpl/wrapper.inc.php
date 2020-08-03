@@ -15,32 +15,6 @@
     <!--bootstrap min css-->
     
     <wb-snippet name="wbapp" />
-    
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/bootstrap.min.css">
-    <!--owl carousel min css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/owl.carousel.min.css">
-    <!--slick min css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/slick.css">
-    <!--magnific popup min css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/magnific-popup.css">
-    <!--font awesome css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/font.awesome.css">
-    <!--ionicons css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/ionicons.min.css">
-    <!--simple line icons css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/simple-line-icons.css">
-    <!--animate css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/animate.css">
-    <!--jquery ui min css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/jquery-ui.min.css">
-    <!--slinky menu css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/slinky.menu.css">
-    <!--plugins css-->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/plugins.css">
-    
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="{{_var.base}}/assets/css/style.css">
-
 </head>
 
 <body>
@@ -684,38 +658,42 @@
         <!-- /.box -->
     </div>
     <!--news letter popup start-->
+
+    <script type="wbapp">
+        wbapp.loadStyles([
+            "{{_var.base}}/assets/css/bootstrap.min.css",
+            "{{_var.base}}/assets/css/owl.carousel.min.css",
+            "{{_var.base}}/assets/css/slick.css",
+            "{{_var.base}}/assets/css/magnific-popup.css",
+            "{{_var.base}}/assets/css/font.awesome.css",
+            "{{_var.base}}/assets/css/ionicons.min.css",
+            "{{_var.base}}/assets/css/simple-line-icons.css",
+            "{{_var.base}}/assets/css/animate.css",
+            "{{_var.base}}/assets/css/jquery-ui.min.css",
+            "{{_var.base}}/assets/css/slinky.menu.css",
+            "{{_var.base}}/assets/css/plugins.css",
+            "{{_var.base}}/assets/css/style.css"
+        ]);
+        wbapp.loadScripts([
+            "{{_var.base}}/assets/js/popper.js",
+            "{{_var.base}}/assets/js/bootstrap.min.js",
+            "{{_var.base}}/assets/js/owl.carousel.min.js",
+            "{{_var.base}}/assets/js/slick.min.js",
+            "{{_var.base}}/assets/js/jquery.magnific-popup.min.js",
+            "{{_var.base}}/assets/js/jquery.counterup.min.js",
+            "{{_var.base}}/assets/js/jquery.countdown.js",
+            "{{_var.base}}/assets/js/jquery.ui.js",
+            "{{_var.base}}/assets/js/jquery.elevatezoom.js",
+            "{{_var.base}}/assets/js/isotope.pkgd.min.js",
+            "{{_var.base}}/assets/js/slinky.menu.js",
+            "{{_var.base}}/assets/js/plugins.js"
+        ],"siteready");
+    </script>
+
     
 <!-- JS
 ============================================ -->
-
-
-
-
-<!--popper min js-->
-<script src="{{_var.base}}/assets/js/popper.js"></script>
-<!--bootstrap min js-->
-<script src="{{_var.base}}/assets/js/bootstrap.min.js"></script>
-<!--owl carousel min js-->
-<script src="{{_var.base}}/assets/js/owl.carousel.min.js"></script>
-<!--slick min js-->
-<script src="{{_var.base}}/assets/js/slick.min.js"></script>
-<!--magnific popup min js-->
-<script src="{{_var.base}}/assets/js/jquery.magnific-popup.min.js"></script>
-<!--counterup min js-->
-<script src="{{_var.base}}/assets/js/jquery.counterup.min.js"></script>
-<!--jquery countdown min js-->
-<script src="{{_var.base}}/assets/js/jquery.countdown.js"></script>
-<!--jquery ui min js-->
-<script src="{{_var.base}}/assets/js/jquery.ui.js"></script>
-<!--jquery elevatezoom min js-->
-<script src="{{_var.base}}/assets/js/jquery.elevatezoom.js"></script>
-<!--isotope packaged min js-->
-<script src="{{_var.base}}/assets/js/isotope.pkgd.min.js"></script>
-<!--slinky menu js-->
-<script src="{{_var.base}}/assets/js/slinky.menu.js"></script>
-<!-- Plugins JS -->
 <script src="{{_var.base}}/assets/js/plugins.js"></script>
-
 <!-- Main JS -->
 <script src="{{_var.base}}/assets/js/main.js"></script>
 

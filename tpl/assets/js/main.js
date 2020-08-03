@@ -1,5 +1,5 @@
-(function ($) {
-    "use strict";
+"use strict";
+    $(document).on('siteready', function () {
 
     new WOW().init();  
 
@@ -13,9 +13,8 @@
 		});
     }
     
-    $(window).on('load', function () {
         dataBackgroundImage();
-    });
+
     
     
     /*---stickey menu---*/
@@ -740,9 +739,4 @@
     
      /*---product dl column3 activation---*/
     
-    
-
-    
-    
-    
-})(jQuery);	
+    });
