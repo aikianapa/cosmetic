@@ -14,9 +14,7 @@
     }
     
         dataBackgroundImage();
-        setTimeout(function(){
-            $("body").removeClass('loader');    
-        },300);
+        $("body").removeClass('loader');    
         
     
     

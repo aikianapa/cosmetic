@@ -1,4 +1,11 @@
 body.loader {
+    overflow: hidden;
+}
+body.loader * {
+     display:none;   
+}
+
+body.loader #loader {
     background-color: #ffffff;
     background-image: url(/tpl/assets/img/loader.gif);
     background-repeat: no-repeat;
@@ -7,8 +14,6 @@ body.loader {
     width: 100vw;
     height: 100vh;
     z-index:99999;
-    overflow: hidden;
-}
-body.loader * {
-     display:none;   
+    display: block;
+    overflow: hidden;    
 }
