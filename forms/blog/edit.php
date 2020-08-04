@@ -1,5 +1,5 @@
 <html>
-<div class="modal fade effect-scale show removable" id="modalPagesEdit" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade effect-scale show removable" id="modalBlogEdit" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -14,21 +14,34 @@
                 <form id="{{_form}}EditForm">
                     <input type="checkbox" class="custom-control-input" name="active" id="{{_form}}ValueItemActive">
                     <div class="form-group row">
-                        <div class="input-group col-12">
+                        <div class="input-group col-sm-4">
                             <div class="input-group-prepend">
-                                <span class="input-group-text">{{_route.host}}/</span>
+                                <span class="input-group-text"><i class="ri-calendar-2-line"></i></span>
                             </div>
-                            <input type="text" wb="module=smartid" name="id" class="form-control" placeholder="Страница">
+                            <input type="text" wb="module=datetimepicker&type=datetimepicker" name="date" class="form-control" placeholder="Дата">
                         </div>
+                        
+                        <div class="col-sm-4">
+                            <div class="custom-control custom-radio d-inline mr-3">
+                              <input type="radio" id="customRadio1" name="type" value="article" class="custom-control-input" checked>
+                              <label class="custom-control-label" for="customRadio1">В статьи</label>
+                            </div>
+
+                            <div class="custom-control custom-radio d-inline">
+                              <input type="radio" id="customRadio2" name="type" value="news" class="custom-control-input">
+                              <label class="custom-control-label" for="customRadio2">В новости</label>
+                            </div>
+                        </div>  
+
+                        
                     </div>
 
+                   
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#{{_form}}EditForm-tab1" role="tab" aria-controls="{{_form}}EditForm-tab1" aria-selected="true">{{_lang.main}}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#{{_form}}EditForm-tab2" role="tab" aria-controls="{{_form}}EditForm-tab2" aria-selected="false">{{_lang.prop}}</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#{{_form}}EditForm-tab3" role="tab" aria-controls="{{_form}}EditForm-tab3" aria-selected="false">{{_lang.seo}}</a>
                         </li>
@@ -38,17 +51,6 @@
                     </ul>
                     <div class="tab-content p-3">
                         <div class="tab-pane fade show active" id="{{_form}}EditForm-tab1" role="tabpanel" aria-labelledby="{{_form}}EditForm-tab1">
-
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label">Шаблон</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" name="template" placeholder="Шаблон">
-                                        <wb-foreach wb='call=wbListTpl()'>
-                                            <option value="{{_val}}">{{_val}}</option>
-                                        </wb-foreach>
-                                    </select>
-                                </div>
-                            </div>
                             
                             
                             <wb-multilang name="lang" wb-lang="{'ru':'Русский','en':'Английский'}">
@@ -71,9 +73,7 @@
                             
 
                         </div>
-                        <div class="tab-pane fade" id="{{_form}}EditForm-tab2" role="tabpanel" aria-labelledby="{{_form}}EditForm-tab2">
-                            <input wb-tree name="prop">
-                        </div>
+
                         <div class="tab-pane fade" id="{{_form}}EditForm-tab3" role="tabpanel" aria-labelledby="{{_form}}EditForm-tab3">
                             <wb-multilang name="seo" wb-lang="{'ru':'Русский','en':'Английский'}">
                                 <wb-include wb="form=common&mode=seo" />
