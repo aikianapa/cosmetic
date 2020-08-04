@@ -10041,3 +10041,36 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 /*privacy policy css end*/
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+.pagination {
+    border: 1px solid #ededed;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+
+.pagination .page-item .page-link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 22px;
+    text-align: center;
+    background: #f1f1f1;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding: 3px;
+    color:rgb(91, 91, 91);
+}
+
+.pagination .page-item:hover .page-link {
+    background: #d52121;
+    color: #ffffff;
+}
+
+.pagination .page-item.active .page-link {
+    background: #d52121;
+    color: #ffffff;
+    border-color: #d52121;
+}

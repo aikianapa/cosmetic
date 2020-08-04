@@ -271,18 +271,6 @@
                         </div>                            
                         </wb-foreach>
                     </div>
-                    <div class="shop_toolbar t_bottom">
-                        <div class="pagination">
-                            <ul>
-                                <li class="current">1</li>
-                                <li><a href="shop.html#">2</a></li>
-                                <li><a href="shop.html#">3</a></li>
-                                <li class="next"><a href="shop.html#">next</a></li>
-                                <li><a href="shop.html#">>></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--shop toolbar end-->
                     <!--shop wrapper end-->
                 </div>
             </div>
