@@ -14,7 +14,10 @@
     }
     
         dataBackgroundImage();
-
+        setTimeout(function(){
+            $("body").removeClass('loader');    
+        },300);
+        
     
     
     /*---stickey menu---*/

@@ -1,0 +1,14 @@
+body.loader {
+    background-color: #ffffff;
+    background-image: url(/tpl/assets/img/loader.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: static;
+    width: 100vw;
+    height: 100vh;
+    z-index:99999;
+    overflow: hidden;
+}
+body.loader * {
+     display:none;   
+}

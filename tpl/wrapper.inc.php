@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{_var.base}}/assets/img/favicon.ico">
+    <link rel="stylesheet" href="{{_var.base}}/assets/css/loader.css">
     
     <!-- CSS 
     ========================= -->
@@ -17,8 +18,7 @@
     <wb-snippet name="wbapp" />
 </head>
 
-<body>
-   
+<body class="loader">
     <!--header area start-->
     <!--offcanvas menu area start-->
     <div class="off_canvars_overlay">
