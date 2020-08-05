@@ -16,6 +16,7 @@
     <!--bootstrap min css-->
     
     <wb-snippet name="wbapp" />
+    <wb-snippet name="bootstrap" />
 </head>
 
 <body class="loader">
@@ -38,16 +39,9 @@
                         </div>
                         <div class="language_currency top">
                             <ul>
-                                <li class="language"><a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/icon/language.png" alt=""> English <i class="icon-right ion-ios-arrow-down"></i></a>
-                                    <ul class="dropdown_language">
-                                        <li><a href="{{_var.base}}/">French</a></li>
-                                        <li><a href="{{_var.base}}/">Spanish</a></li>
-                                        <li><a href="{{_var.base}}/">Russian</a></li>
-                                    </ul>
-                                </li>
-
+                                <li><a href="#">ru</a></li>
+                                <li><a href="#">en</a></li>
                                 <li><a href="tel:{{_var.phone}}">{{_var.phone}}</a></li>
-
                             </ul>
                         </div>
                         <div class="language_currency bottom">
@@ -76,7 +70,8 @@
                                 </a>
                                 <!--mini cart-->
                                 <div class="mini_cart">
-                                    <div class="cart_gallery">
+                                    <div class="cart_gallery" wb="module=cart&list">
+
                                         <div class="cart_item">
                                            <div class="cart_img">
                                                <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/s-product/product.jpg" alt=""></a>
@@ -86,21 +81,10 @@
                                                 <p>1 x <span> $30.00 </span></p>    
                                             </div>
                                             <div class="cart_remove">
-                                                <a href="{{_var.base}}/"><i class="ion-ios-close-outline"></i></a>
+                                                <a href="javascript:void(0)" wb-module="module=cart&remove"><i class="ion-ios-close-outline"></i></a>
                                             </div>
                                         </div>
-                                        <div class="cart_item">
-                                           <div class="cart_img">
-                                               <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/s-product/product2.jpg" alt=""></a>
-                                           </div>
-                                            <div class="cart_info">
-                                                <a href="{{_var.base}}/">Juicy Couture Juicy</a>
-                                                <p>1 x <span> $29.00 </span></p>    
-                                            </div>
-                                            <div class="cart_remove">
-                                                <a href="{{_var.base}}/"><i class="ion-ios-close-outline"></i></a>
-                                            </div>
-                                        </div>
+
                                     </div>
                                     <div class="mini_cart_table">
                                         <div class="cart_table_border">
@@ -207,7 +191,7 @@
                             </ul>
                         </div>
                         <div class="offcanvas_footer">
-                            <span><a href="{{_var.base}}/"><i class="fa fa-envelope-o"></i> info@yourdomain.com</a></span>
+                            <span><a href="mailto:{{_var.email}}"><i class="fa fa-envelope-o"></i> {{_var.email}}</a></span>
                         </div>
                     </div>
                 </div>
@@ -224,13 +208,8 @@
                         <div class="col-lg-4">
                             <div class="language_currency top_left">
                                 <ul>
-                                    <li class="language"><a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/icon/language.png" alt=""> English <i class="icon-right ion-ios-arrow-down"></i></a>
-                                        <ul class="dropdown_language">
-                                            <li><a href="{{_var.base}}/">French</a></li>
-                                            <li><a href="{{_var.base}}/">Spanish</a></li>
-                                            <li><a href="{{_var.base}}/">Russian</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="#">ru</a></li>
+                                    <li><a href="#">en</a></li>
                                     <li><a href="tel:{{_var.phone}}">{{_var.phone}}</a></li>
                                     
                                 </ul>
@@ -301,31 +280,21 @@
                                         </a>
                                         <!--mini cart-->
                                         <div class="mini_cart">
-                                            <div class="cart_gallery">
-                                                <div class="cart_item">
-                                                   <div class="cart_img">
-                                                       <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/s-product/product.jpg" alt=""></a>
-                                                   </div>
-                                                    <div class="cart_info">
-                                                        <a href="{{_var.base}}/">Juicy Couture Tricot</a>
-                                                        <p>1 x <span> $30.00 </span></p>    
+                                            <div class="cart_gallery" wb="module=cart&list">
+
+                                                    <div class="cart_item">
+                                                       <div class="cart_img">
+                                                           <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/s-product/product.jpg" alt=""></a>
+                                                       </div>
+                                                        <div class="cart_info">
+                                                            <a href="{{_var.base}}/">Juicy Couture Tricot</a>
+                                                            <p>1 x <span> $30.00 </span></p>    
+                                                        </div>
+                                                        <div class="cart_remove">
+                                                            <a href="javascript:void(0)" wb-module="module=cart&remove"><i class="ion-ios-close-outline"></i></a>
+                                                        </div>
                                                     </div>
-                                                    <div class="cart_remove">
-                                                        <a href="{{_var.base}}/"><i class="ion-ios-close-outline"></i></a>
-                                                    </div>
-                                                </div>
-                                                <div class="cart_item">
-                                                   <div class="cart_img">
-                                                       <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/s-product/product2.jpg" alt=""></a>
-                                                   </div>
-                                                    <div class="cart_info">
-                                                        <a href="{{_var.base}}/">Juicy Couture Juicy</a>
-                                                        <p>1 x <span> $29.00 </span></p>    
-                                                    </div>
-                                                    <div class="cart_remove">
-                                                        <a href="{{_var.base}}/"><i class="ion-ios-close-outline"></i></a>
-                                                    </div>
-                                                </div>
+
                                             </div>
                                             <div class="mini_cart_table">
                                                 <div class="cart_table_border">
@@ -662,7 +631,6 @@
 
     <script type="wbapp">
         wbapp.loadStyles([
-            "{{_var.base}}/assets/css/bootstrap.min.css",
             "{{_var.base}}/assets/css/owl.carousel.min.css",
             "{{_var.base}}/assets/css/slick.css",
             "{{_var.base}}/assets/css/magnific-popup.css",
@@ -677,7 +645,6 @@
         ]);
         wbapp.loadScripts([
             "{{_var.base}}/assets/js/popper.js",
-            "{{_var.base}}/assets/js/bootstrap.min.js",
             "{{_var.base}}/assets/js/owl.carousel.min.js",
             "{{_var.base}}/assets/js/slick.min.js",
             "{{_var.base}}/assets/js/jquery.magnific-popup.min.js",

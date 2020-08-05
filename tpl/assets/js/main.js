@@ -17,6 +17,7 @@
         $("body").removeClass('loader');    
         
     
+        //wbapp.storage('mod.cart.list',[            1,2,3,4        ]);
     
     /*---stickey menu---*/
     $(window).on('scroll',function() {    

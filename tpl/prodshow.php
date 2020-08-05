@@ -96,10 +96,18 @@
                                 </ul>
                             </div>
                             <div class="product_variant quantity">
-                                <label>quantity</label>
-                                <input min="1" max="100" value="1" type="number">
-                                <button class="button" type="submit">add to cart</button>
-
+                                <form>
+                                    <label>quantity</label>
+                                    <input type="hidden" name="id" value="{{id}}">
+                                    <input type="hidden" name="name" value="{{main.{{_sess.lang}}.data.name}}">
+                                    <input type="hidden" name="img" value="{{images.0.img}}">
+                                    <input type="hidden" name="price">
+                                    <input type="hidden" name="articul">
+                                    <input type="hidden" name="volume">
+                                    <input min="1" max="100" value="1" name="qty" type="number">
+                                    
+                                    <button class="button" type="submit" wb-module="module=cart&add">add to cart</button>
+                                </form>
                             </div>
                             <div class=" product_d_action">
                                 <ul>
