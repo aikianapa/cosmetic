@@ -74,14 +74,14 @@
 
                                         <div class="cart_item">
                                            <div class="cart_img">
-                                               <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/s-product/product.jpg" alt=""></a>
+                                               <a href="#"><img data-src="/thumbc/100x75/src/{{img}}" alt=""></a>
                                            </div>
                                             <div class="cart_info">
-                                                <a href="{{_var.base}}/">Juicy Couture Tricot</a>
-                                                <p>1 x <span> $30.00 </span></p>    
+                                                <a href="{{_var.base}}/">{{name}}</a>
+                                                <p>{{qty}} x <span> {{price}} </span></p>    
                                             </div>
                                             <div class="cart_remove">
-                                                <a href="javascript:void(0)" wb-module="module=cart&remove"><i class="ion-ios-close-outline"></i></a>
+                                                <a href="javascript:void(0)" class="mod-cart-remove"><i class="ion-ios-close-outline"></i></a>
                                             </div>
                                         </div>
 
@@ -100,7 +100,7 @@
                                     </div>
                                     <div class="mini_cart_footer">
                                        <div class="cart_button">
-                                            <a href="{{_var.base}}/cart.html"><i class="fa fa-shopping-cart"></i> View cart</a>
+                                            <a href="/cart"><i class="fa fa-shopping-cart"></i> View cart</a>
                                         </div>
                                         <div class="cart_button">
                                             <a href="{{_var.base}}/checkout.html"><i class="fa fa-sign-in"></i> Checkout</a>
@@ -284,14 +284,14 @@
 
                                                     <div class="cart_item">
                                                        <div class="cart_img">
-                                                           <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/s-product/product.jpg" alt=""></a>
+                                                           <a href="#"><img data-src="/thumbc/100x75/src/{{img}}" alt=""></a>
                                                        </div>
                                                         <div class="cart_info">
-                                                            <a href="{{_var.base}}/">Juicy Couture Tricot</a>
-                                                            <p>1 x <span> $30.00 </span></p>    
+                                                            <a href="#">{{name}}</a>
+                                                            <p>{{qty}} x <span> {{price}} </span></p>    
                                                         </div>
                                                         <div class="cart_remove">
-                                                            <a href="javascript:void(0)" wb-module="module=cart&remove"><i class="ion-ios-close-outline"></i></a>
+                                                            <a href="javascript:void(0)" class="mod-cart-remove"><i class="ion-ios-close-outline"></i></a>
                                                         </div>
                                                     </div>
 
@@ -310,7 +310,7 @@
                                             </div>
                                             <div class="mini_cart_footer">
                                                <div class="cart_button">
-                                                    <a href="{{_var.base}}/cart.html"><i class="fa fa-shopping-cart"></i> View cart</a>
+                                                    <a href="/cart"><i class="fa fa-shopping-cart"></i> View cart</a>
                                                 </div>
                                                 <div class="cart_button">
                                                     <a href="{{_var.base}}/checkout.html"><i class="fa fa-sign-in"></i> Checkout</a>

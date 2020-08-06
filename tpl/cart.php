@@ -42,15 +42,14 @@
                             <tbody wb="module=cart&list">
                                 <tr>
                                    <td class="product_remove">
-                                        <a href="javascript:void(0)" wb-module="module=cart&remove">
+                                        <a href="javascript:void(0)" class="mod-cart-remove">
                                        <i class="fa fa-trash-o"></i></a>
-                                       {{@index}}
                                     </td>
-                                    <td class="product_thumb"><a href="#"><img data-src="{{_var.base}}/assets/img/s-product/product.jpg" alt=""></a></td>
-                                    <td class="product_name"><a href="#">Handbag fringilla</a></td>
-                                    <td class="product-price">£65.00</td>
-                                    <td class="product_quantity"><label>Quantity</label> <input min="1" max="100" value="1" type="number"></td>
-                                    <td class="product_total">£130.00</td>
+                                    <td class="product_thumb"><a href="#"><img data-src="/thumbc/100x75/src/{{img}}" alt=""></a></td>
+                                    <td class="product_name"><a href="#">{{name}}</a></td>
+                                    <td class="product-price">{{price}}</td>
+                                    <td class="product_quantity"><label>Quantity</label> <input min="1" max="100" value="1" value="{{qty}}" type="number"></td>
+                                    <td class="product_total">{{sum}}</td>
                                 </tr>                                   
                             </tbody>
                         </table>   
