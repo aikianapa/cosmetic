@@ -109,7 +109,25 @@
                         </div>
                         
                         <div id="menu" class="text-left ">
-                            <ul class="offcanvas_main_menu">
+                           
+                            <ul  class="offcanvas_main_menu" wb-tree="{
+                                  'table':'_settings',
+                                  'item':'settings',
+                                  'field':'cmsmenu.sitemenu.ru',
+                                  'parent':'false',
+                                  'children':'false'}">
+                                <li wb-if="'{{children}}' == ''"><a href="{{data.link}}">{{name}}</a></li>
+                                <li wb-if="'{{children}}' >  ''" class="menu-item-has-children">
+                                       <a href="#">{{name}}</a>
+                                        <ul class="sub-menu">
+                                           <wb-foreach wb="{'from':'children'}">
+                                               <li><a href="{{data.link}}">{{name}}</a></li>
+                                            </wb-foreach>
+                                        </ul>
+                                </li>
+                            </ul>
+                           
+                            <ul class="d-none offcanvas_main_menu">
                                 <li class="menu-item-has-children active">
                                     <a href="{{_var.base}}/">Home</a>
                                     <ul class="sub-menu">
@@ -245,7 +263,7 @@
                                   'children':'false'}">
                                 <li wb-if="'{{children}}' == ''"><a href="{{data.link}}">{{name}}</a></li>
                                 <li wb-if="'{{children}}' >  ''">
-                                       <a href="{{data.link}}">{{name}}</a>
+                                       <a href="javascript:void(0)">{{name}}</a>
                                         <ul class="sub_menu">
                                            <wb-foreach wb="{'from':'children'}">
                                                <li><a href="{{data.link}}">{{name}}</a></li>
