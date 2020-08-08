@@ -65,8 +65,8 @@
                             <div class="header_account_list  mini_cart_wrapper">
                                 <a href="javascript:void(0)"><i class="icon-bag icons"></i>
                                     <span class="cart_itemtext">{{_lang.cart}}:</span> 
-                                    <span class="cart_itemtotal">$59.00</span>
-                                    <span class="item_count">2</span>
+                                    <span class="cart_itemtotal mod-cart-total-sum"></span>
+                                    <span class="item_count mod-cart-count"></span>
                                 </a>
                                 <!--mini cart-->
                                 <div class="mini_cart">
@@ -88,13 +88,9 @@
                                     </div>
                                     <div class="mini_cart_table">
                                         <div class="cart_table_border">
-                                            <div class="cart_total">
-                                                <span>Sub total:</span>
-                                                <span class="price">$125.00</span>
-                                            </div>
                                             <div class="cart_total mt-10">
                                                 <span>total:</span>
-                                                <span class="price">$125.00</span>
+                                                <span class="price mod-cart-total-sum"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -275,8 +271,8 @@
                                     <div class="header_account_list  mini_cart_wrapper">
                                         <a href="javascript:void(0)"><i class="icon-bag icons"></i>
                                             <span class="cart_itemtext">{{_lang.cart}}:</span> 
-                                            <span class="cart_itemtotal">$59.00</span>
-                                            <span class="item_count">2</span>
+                                            <span class="cart_itemtotal mod-cart-total-sum"></span>
+                                            <span class="item_count mod-cart-count"></span>
                                         </a>
                                         <!--mini cart-->
                                         <div class="mini_cart">
@@ -298,13 +294,13 @@
                                             </div>
                                             <div class="mini_cart_table">
                                                 <div class="cart_table_border">
-                                                    <div class="cart_total">
+                                                    <!--div class="cart_total">
                                                         <span>Sub total:</span>
                                                         <span class="price">$125.00</span>
-                                                    </div>
+                                                    </div-->
                                                     <div class="cart_total mt-10">
                                                         <span>total:</span>
-                                                        <span class="price">$125.00</span>
+                                                        <span class="price mod-cart-total-sum"></span>
                                                     </div>
                                                 </div>
                                             </div>

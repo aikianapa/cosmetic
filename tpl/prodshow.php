@@ -74,9 +74,9 @@
                                 <span class="current_price">{{price}}</span>
                                 <span class="old_price">£80.00</span>
                             </div>
-                            <div class="product_desc">
-                                <p>eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in </p>
-                            </div>
+                            <!--div class="product_desc">
+                                {{main.{{_sess.lang}}.data.text}}
+                            </div-->
                             <div class="product_variant color">
                                 <h3>Available Options</h3>
                                 <label>color</label>
@@ -97,7 +97,7 @@
                             </div>
                             <div class="product_variant quantity">
                                 <form>
-                                    <label>quantity</label>
+                                    <label>{{_lang.quantity}}</label>
                                     <input type="hidden" name="id" value="{{id}}">
                                     <input type="hidden" name="name" value="{{main.{{_sess.lang}}.data.name}}" done>
                                     <input type="hidden" name="img" value="{{images.0.img}}">
@@ -105,7 +105,7 @@
                                     <input type="hidden" name="articul">
                                     <input type="hidden" name="volume">
                                     <input min="1" max="100" value="1" name="qty" type="number">
-                                    <button class="button" type="submit" wb-module="module=cart&add&ajax=/api/query/products/{{id}}/">add to cart</button>
+                                    <button class="button" type="submit" wb-module="module=cart&add&ajax=/api/query/products/{{id}}/">{{_lang.addtocart}}</button>
                                 </form>
                             </div>
                             <div class=" product_d_action">
@@ -326,9 +326,13 @@
 products = Продукция
 description = Описание
 ingredients = Ингредиенты
+addtocart = "Добавить в корзину"
+quantity = Количество
 [en] 
 products = Products
 description = Description
 ingredients = Ingredients
+addtocart = "Add to cart"
+quantity = Quantity
 </wb-lang>
 </wb-jq>

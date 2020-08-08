@@ -21,13 +21,19 @@
         </div>
     </div>
     <div class="product_content grid_content">
-        <h4 class="product_name"><a href="{{_var.prodlink}}">1{{name}}</a></h4>
+        <h4 class="product_name"><a href="{{_var.prodlink}}">{{name}}</a></h4>
         <div class="price_box">
             <!--span class="old_price">$245.00</span-->
             <span class="current_price">{{price}} ₽</span>
         </div>
         <div class="add_to_cart">
-            <a href="#">+ {{_lang.toCart}}</a>
+            <a href="#" 
+                wb-module="module=cart&add&ajax=/api/query/products/{{id}}/"
+                wb-data="{
+                    'name':'{{main.{{_sess.lang}}.data.name}}',
+                    'img':'{{images.0.img}}'
+                }"
+            >+ {{_lang.toCart}}</a>
         </div>
     </div>
 
