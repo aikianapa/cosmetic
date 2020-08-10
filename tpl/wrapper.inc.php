@@ -47,8 +47,6 @@
                         <div class="language_currency bottom">
                             <ul>
                                 <li><span>Mon - Fri: 8:00 - 18:00</span></li>
-
-                                <li><a href="{{_var.base}}/"><i class="icon-equalizer icons"></i> Compare (3)</a></li>
                             </ul>
                         </div>
                         <div class="header_account_area">
@@ -231,7 +229,6 @@
                             <div class="language_currency text-right">
                                 <ul>
                                     <li><span>Mon - Fri: 8:00 - 18:00</span></li>
-                                    <li><a href="{{_var.base}}/"><i class="icon-equalizer icons"></i> Compare (3)</a></li>
                                 </ul>
                             </div>
                         </div>
