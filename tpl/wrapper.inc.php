@@ -10,21 +10,21 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{_var.base}}/assets/img/favicon.ico">
     <link rel="stylesheet" href="{{_var.base}}/assets/css/loader.css">
-    
-    <!-- CSS 
+
+    <!-- CSS
     ========================= -->
     <!--bootstrap min css-->
-    
+
     <wb-snippet name="wbapp" />
     <wb-snippet name="bootstrap" />
 </head>
 
 <body class="loader">
-    <div id="loader"></div>   
+    <div id="loader"></div>
     <!--header area start-->
     <!--offcanvas menu area start-->
     <div class="off_canvars_overlay">
-                
+
     </div>
     <div class="offcanvas_menu">
         <div class="container">
@@ -35,7 +35,7 @@
                     </div>
                     <div class="offcanvas_menu_wrapper">
                         <div class="canvas_close">
-                            <a href="javascript:void(0)"><i class="ion-android-close"></i></a>  
+                            <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
                         </div>
                         <div class="language_currency top">
                             <ul>
@@ -49,7 +49,6 @@
                                 <li><span>Mon - Fri: 8:00 - 18:00</span></li>
 
                                 <li><a href="{{_var.base}}/"><i class="icon-equalizer icons"></i> Compare (3)</a></li>
-                                <li><a href="{{_var.base}}/"><i class="icon-heart"></i> Wishlist (3)</a></li>
                             </ul>
                         </div>
                         <div class="header_account_area">
@@ -64,7 +63,7 @@
                             </div>
                             <div class="header_account_list  mini_cart_wrapper">
                                 <a href="javascript:void(0)"><i class="icon-bag icons"></i>
-                                    <span class="cart_itemtext">{{_lang.cart}}:</span> 
+                                    <span class="cart_itemtext">{{_lang.cart}}:</span>
                                     <span class="cart_itemtotal mod-cart-total-sum"></span>
                                     <span class="item_count mod-cart-count"></span>
                                 </a>
@@ -78,7 +77,7 @@
                                            </div>
                                             <div class="cart_info">
                                                 <a href="{{_var.base}}/">{{name}}</a>
-                                                <p>{{qty}} x <span> {{price}} </span></p>    
+                                                <p>{{qty}} x <span> {{price}} </span></p>
                                             </div>
                                             <div class="cart_remove">
                                                 <a href="javascript:void(0)" class="mod-cart-remove"><i class="ion-ios-close-outline"></i></a>
@@ -107,9 +106,9 @@
                                 <!--mini cart end-->
                            </div>
                         </div>
-                        
+
                         <div id="menu" class="text-left ">
-                           
+
                             <ul  class="offcanvas_main_menu" wb-tree="{
                                   'table':'_settings',
                                   'item':'settings',
@@ -126,7 +125,7 @@
                                         </ul>
                                 </li>
                             </ul>
-                           
+
                             <ul class="d-none offcanvas_main_menu">
                                 <li class="menu-item-has-children active">
                                     <a href="{{_var.base}}/">Home</a>
@@ -155,7 +154,6 @@
                                             <a href="{{_var.base}}/">other Pages</a>
                                             <ul class="sub-menu">
                                                 <li><a href="{{_var.base}}/cart.html">{{_lang.cart}}</a></li>
-                                                <li><a href="{{_var.base}}/wishlist.html">Wishlist</a></li>
                                                 <li><a href="{{_var.base}}/checkout.html">Checkout</a></li>
                                                 <li><a href="{{_var.base}}/my-account.html">my account</a></li>
                                                 <li><a href="{{_var.base}}/404.html">Error 404</a></li>
@@ -200,7 +198,7 @@
                                     <a href="{{_var.base}}/about.html">about Us</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="{{_var.base}}/contact.html"> Contact Us</a> 
+                                    <a href="{{_var.base}}/contact.html"> Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -213,7 +211,7 @@
         </div>
     </div>
     <!--offcanvas menu area end-->
-    
+
     <header>
         <div class="main_header">
             <div class="header_top">
@@ -225,7 +223,7 @@
                                     <li><a href="#">ru</a></li>
                                     <li><a href="#">en</a></li>
                                     <li><a href="tel:{{_var.phone}}">{{_var.phone}}</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -234,7 +232,6 @@
                                 <ul>
                                     <li><span>Mon - Fri: 8:00 - 18:00</span></li>
                                     <li><a href="{{_var.base}}/"><i class="icon-equalizer icons"></i> Compare (3)</a></li>
-                                    <li><a href="{{_var.base}}/"><i class="icon-heart"></i> Wishlist (3)</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -248,13 +245,13 @@
                             <div class="logo">
                                 <a href="/"><img src="{{_var.base}}/assets/img/logo/logo.png" alt=""></a>
                             </div>
-                            
+
                         </div>
-                        <div class="col-lg-10">                
+                        <div class="col-lg-10">
                             <div class="header_right_info menu_position">
                                 <!--main menu start-->
-                                <div class="main_menu"> 
-                                    <nav>  
+                                <div class="main_menu">
+                                    <nav>
                             <ul wb-tree="{
                                   'table':'_settings',
                                   'item':'settings',
@@ -273,7 +270,7 @@
                             </ul>
                             <wb-jq wb='$dom->find("li:first-child > a")->addClass("active")'/>
 
-                                    </nav> 
+                                    </nav>
                                 </div>
                                 <!--main menu end-->
                                 <div class="header_account_area">
@@ -288,7 +285,7 @@
                                     </div>
                                     <div class="header_account_list  mini_cart_wrapper">
                                         <a href="javascript:void(0)"><i class="icon-bag icons"></i>
-                                            <span class="cart_itemtext">{{_lang.cart}}:</span> 
+                                            <span class="cart_itemtext">{{_lang.cart}}:</span>
                                             <span class="cart_itemtotal mod-cart-total-sum"></span>
                                             <span class="item_count mod-cart-count"></span>
                                         </a>
@@ -302,7 +299,7 @@
                                                        </div>
                                                         <div class="cart_info">
                                                             <a href="#">{{name}}</a>
-                                                            <p>{{qty}} x <span> {{price}} </span></p>    
+                                                            <p>{{qty}} x <span> {{price}} </span></p>
                                                         </div>
                                                         <div class="cart_remove">
                                                             <a href="javascript:void(0)" class="mod-cart-remove"><i class="ion-ios-close-outline"></i></a>
@@ -336,11 +333,11 @@
                                    </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </header>
     <!--header area end-->
 
@@ -389,9 +386,9 @@
         </div>
     </div>
     <!--shipping area end-->
-    
+
     <!--footer area start-->
-    <footer class="footer_widgets"> 
+    <footer class="footer_widgets">
         <div class="footer_top">
             <div class="container">
                 <div class="row">
@@ -475,24 +472,24 @@
             </div>
         </div>
         <div class="footer_bottom">
-            <div class="container">  
+            <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="copyright_area">
                             <p>Copyright  © 2020  <a href="/">Bonique</a>.  <a href="/" target="_blank">All rights reserved.</a></p>
                         </div>
-                    </div>    
-                    <div class="col-lg-6 col-md-6">    
+                    </div>
+                    <div class="col-lg-6 col-md-6">
                         <div class="footer_payment text-right">
                             <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/icon/payment.png" alt=""></a>
                         </div>
                     </div>
                 </div>
-            </div>     
-        </div>      
+            </div>
+        </div>
     </footer>
     <!--footer area end-->
-   
+
     <!-- modal area start-->
     <div class="modal fade" id="modal_box" tabindex="-1" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -504,30 +501,30 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-5 col-md-5 col-sm-12">
-                                <div class="modal_tab">  
+                                <div class="modal_tab">
                                     <div class="tab-content product-details-large">
                                         <div class="tab-pane fade show active" id="tab1" role="tabpanel" >
                                             <div class="modal_tab_img">
-                                                <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/product/productbig1.jpg" alt=""></a>    
+                                                <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/product/productbig1.jpg" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab2" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/product/productbig2.jpg" alt=""></a>    
+                                                <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/product/productbig2.jpg" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab3" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/product/productbig3.jpg" alt=""></a>    
+                                                <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/product/productbig3.jpg" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab4" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/product/productbig4.jpg" alt=""></a>    
+                                                <a href="{{_var.base}}/"><img src="{{_var.base}}/assets/img/product/productbig4.jpg" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal_tab_button">    
+                                    <div class="modal_tab_button">
                                         <ul class="nav product_navactive owl-carousel" role="tablist">
                                             <li >
                                                 <a class="nav-link active" data-toggle="tab" href="{{_var.base}}/tab1" role="tab" aria-controls="tab1" aria-selected="false"><img src="{{_var.base}}/assets/img/product/product2.jpg" alt=""></a>
@@ -543,21 +540,21 @@
                                             </li>
 
                                         </ul>
-                                    </div>    
-                                </div>  
-                            </div> 
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-lg-7 col-md-7 col-sm-12">
                                 <div class="modal_right">
                                     <div class="modal_title mb-10">
-                                        <h2>Donec Ac Tempus</h2> 
+                                        <h2>Donec Ac Tempus</h2>
                                     </div>
                                     <div class="modal_price mb-10">
-                                        <span class="new_price">$64.99</span>    
-                                        <span class="old_price" >$78.99</span>    
+                                        <span class="new_price">$64.99</span>
+                                        <span class="old_price" >$78.99</span>
                                     </div>
                                     <div class="modal_description mb-15">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam, reiciendis maiores quidem aperiam, rerum vel recusandae </p>    
-                                    </div> 
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam, reiciendis maiores quidem aperiam, rerum vel recusandae </p>
+                                    </div>
                                     <div class="variants_selects">
                                         <div class="variants_size">
                                            <h2>size</h2>
@@ -584,7 +581,7 @@
                                                 <input min="1" max="100" step="2" value="1" type="number">
                                                 <button type="submit">add to cart</button>
                                             </form>
-                                        </div>   
+                                        </div>
                                     </div>
                                     <div class="modal_social">
                                         <h2>Share this product</h2>
@@ -594,18 +591,18 @@
                                             <li class="pinterest"><a href="{{_var.base}}/"><i class="fa fa-pinterest"></i></a></li>
                                             <li class="google-plus"><a href="{{_var.base}}/"><i class="fa fa-google-plus"></i></a></li>
                                             <li class="linkedin"><a href="{{_var.base}}/"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>    
-                                    </div>      
-                                </div>    
-                            </div>    
-                        </div>     
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </div>
     <!-- modal area end-->
-    
+
     <!--news letter popup start-->
     <div class="newletter-popup">
         <div id="boxes" class="newletter-container">
@@ -672,7 +669,7 @@
         ],"siteready");
     </script>
 
-    
+
 <!-- JS
 ============================================ -->
 <script src="{{_var.base}}/assets/js/plugins.js"></script>

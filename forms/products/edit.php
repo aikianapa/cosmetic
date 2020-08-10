@@ -1,5 +1,5 @@
 <html>
-<div class="modal fade effect-scale show removable" id="modalProductsEdit" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade effect-scale contain show removable" id="modalProductsEdit" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -119,7 +119,7 @@
                 </form>
 
             </div>
-            <div class="modal-footer pd-x-20 pd-b-20 pd-t-0 bd-t-0">
+            <div class="modal-footer pd-x-20 pd-y-10 pd-t-0">
                 <wb-include wb="{'form':'common_formsave.php'}" />
             </div>
         </div>

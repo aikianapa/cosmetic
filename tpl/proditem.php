@@ -12,8 +12,15 @@
                                     </div-->
         <div class="action_links">
             <ul>
-                <li class="wishlist"><a href="#" title="{{_lang.toWishlist}}"><i class="icon-heart icons"></i></a></li>
-                <li class="compare"><a href="#" title="{{_lang.toCart}}"><i class="icon-basket icons"></i></a></li>
+                <li class="compare">
+                  <a href="#"  title="{{_lang.toCart}}"
+                      wb-module="module=cart&add&ajax=/api/query/products/{{id}}/"
+                      wb-data="{
+                          'name':'{{main.{{_sess.lang}}.data.name}}',
+                          'img':'{{images.0.img}}'
+                      }"
+                  >
+                  <i class="icon-basket icons"></i></a></li>
                 <li class="quick_button">
                     <a href="#" data-toggle="modal" data-target="#modal_box" title="{{_lang.toView}}"> <i class="icon-magnifier-add icons"></i></a>
                 </li>
@@ -27,7 +34,7 @@
             <span class="current_price">{{price}} ₽</span>
         </div>
         <div class="add_to_cart">
-            <a href="#" 
+            <a href="#"
                 wb-module="module=cart&add&ajax=/api/query/products/{{id}}/"
                 wb-data="{
                     'name':'{{main.{{_sess.lang}}.data.name}}',

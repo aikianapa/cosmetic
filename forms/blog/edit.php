@@ -61,6 +61,12 @@
                                     </div>
                                 </div>                                
                                 
+                                <div class="form-group row">
+                                    <label class="col-sm-2 form-control-label">Тэги</label>
+                                    <div class="col-sm-10">
+                                        <wb-module wb="{'module':'tagsinput'}" class="form-control" name="tags" placeholder="Тэги" />
+                                    </div>
+                                </div>
                                 
                                 <div class="form-group row">
                                     <label class="col-12 form-control-label">Текст</label>

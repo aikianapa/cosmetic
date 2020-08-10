@@ -6,7 +6,7 @@
 
     <!--breadcrumbs area start-->
     <div class="breadcrumbs_area">
-        <div class="container">   
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb_content">
@@ -17,10 +17,10 @@
                     </div>
                 </div>
             </div>
-        </div>         
+        </div>
     </div>
     <!--breadcrumbs area end-->
-    
+
     <!--shop  area start-->
     <div class="shop_area shop_reverse mb-60">
         <div class="container">
@@ -64,64 +64,64 @@
                             </div>
                             <div class="widget_list widget_filter">
                                 <h3>Filter by price</h3>
-                                <form action="shop.html#"> 
-                                    <div id="slider-range"></div>   
+                                <form action="shop.html#">
+                                    <div id="slider-range"></div>
                                     <button type="submit">Filter</button>
-                                    <input type="text" name="text" id="amount" />   
-                                </form> 
+                                    <input type="text" name="text" id="amount" />
+                                </form>
                             </div>
                             <div class="widget_list widget_color">
                                 <h3>Select By Color</h3>
                                 <ul>
                                     <li>
-                                        <a href="shop.html#">Black  <span>(6)</span></a> 
+                                        <a href="shop.html#">Black  <span>(6)</span></a>
                                     </li>
                                     <li>
-                                        <a href="shop.html#"> Blue <span>(8)</span></a> 
+                                        <a href="shop.html#"> Blue <span>(8)</span></a>
                                     </li>
                                     <li>
-                                        <a href="shop.html#">Brown <span>(10)</span></a> 
+                                        <a href="shop.html#">Brown <span>(10)</span></a>
                                     </li>
                                     <li>
-                                        <a href="shop.html#"> Green <span>(6)</span></a> 
+                                        <a href="shop.html#"> Green <span>(6)</span></a>
                                     </li>
-                                  
+
                                 </ul>
                             </div>
                             <div class="widget_list widget_color">
                                 <h3>Select By SIze</h3>
                                 <ul>
                                     <li>
-                                        <a href="shop.html#">S  <span>(6)</span></a> 
+                                        <a href="shop.html#">S  <span>(6)</span></a>
                                     </li>
                                     <li>
-                                        <a href="shop.html#"> M <span>(8)</span></a> 
+                                        <a href="shop.html#"> M <span>(8)</span></a>
                                     </li>
                                     <li>
-                                        <a href="shop.html#">L <span>(10)</span></a> 
+                                        <a href="shop.html#">L <span>(10)</span></a>
                                     </li>
                                     <li>
-                                        <a href="shop.html#"> XL <span>(6)</span></a> 
+                                        <a href="shop.html#"> XL <span>(6)</span></a>
                                     </li>
-                                  
+
                                 </ul>
                             </div>
                             <div class="widget_list widget_manu">
                                 <h3>Manufacturer</h3>
                                 <ul>
                                     <li>
-                                        <a href="shop.html#">Brake Parts <span>(6)</span></a> 
+                                        <a href="shop.html#">Brake Parts <span>(6)</span></a>
                                     </li>
                                     <li>
-                                        <a href="shop.html#">Accessories <span>(10)</span></a> 
+                                        <a href="shop.html#">Accessories <span>(10)</span></a>
                                     </li>
                                     <li>
-                                        <a href="shop.html#">Engine Parts <span>(4)</span></a> 
+                                        <a href="shop.html#">Engine Parts <span>(4)</span></a>
                                     </li>
                                     <li>
-                                        <a href="shop.html#">hermes <span>(10)</span></a> 
+                                        <a href="shop.html#">hermes <span>(10)</span></a>
                                     </li>
-                                
+
                                 </ul>
                             </div>
                             <div class="widget_list tags_widget">
@@ -150,7 +150,7 @@
                                             </div>
                                             <div class="product_content">
                                                 <h4 class="product_name"><a href="product-details.html">Calvin Klein Jeans Reflective</a></h4>
-                                                <div class="price_box"> 
+                                                <div class="price_box">
                                                     <span class="old_price">$186.00</span>
                                                     <span class="current_price">$56.00</span>
                                                 </div>
@@ -163,7 +163,7 @@
                                             </div>
                                             <div class="product_content">
                                                 <h4 class="product_name"><a href="product-details.html">New Balance Arishi Sport v1</a></h4>
-                                                <div class="price_box"> 
+                                                <div class="price_box">
                                                     <span class="old_price">$210.00</span>
                                                     <span class="current_price">$68.00</span>
                                                 </div>
@@ -176,7 +176,7 @@
                                             </div>
                                             <div class="product_content">
                                                 <h4 class="product_name"><a href="product-details.html">Brixton Patrol All Terrain Ano</a></h4>
-                                                <div class="price_box"> 
+                                                <div class="price_box">
                                                     <span class="old_price">$136.00</span>
                                                     <span class="current_price">$76.00</span>
                                                 </div>
@@ -191,7 +191,7 @@
                                             </div>
                                             <div class="product_content">
                                                 <h4 class="product_name"><a href="product-details.html">Originals Kaval Windbreaker</a></h4>
-                                                <div class="price_box"> 
+                                                <div class="price_box">
                                                     <span class="old_price">$245.00</span>
                                                     <span class="current_price">$76.00</span>
                                                 </div>
@@ -204,7 +204,7 @@
                                             </div>
                                             <div class="product_content">
                                                 <h4 class="product_name"><a href="product-details.html">Juicy Couture Juicy Quilted</a></h4>
-                                                <div class="price_box"> 
+                                                <div class="price_box">
                                                     <span class="old_price">$180.00</span>
                                                     <span class="current_price">$58.00</span>
                                                 </div>
@@ -217,14 +217,14 @@
                                             </div>
                                             <div class="product_content">
                                                 <h4 class="product_name"><a href="product-details.html">Water and Wind Resistant</a></h4>
-                                                <div class="price_box"> 
+                                                <div class="price_box">
                                                     <span class="old_price">$176.00</span>
                                                     <span class="current_price">$86.00</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -235,7 +235,7 @@
                     <div class="shop_banner_area">
                         <img src="{{_var.base}}/assets/img/bg/banner16.jpg" alt="">
                     </div>
-                    
+
                     <!--shop toolbar start-->
                     <div class="shop_toolbar_wrapper">
                         <div class="shop_toolbar_btn">
@@ -265,10 +265,10 @@
                     </div>
                      <!--shop toolbar end-->
                      <div class="row shop_wrapper" id="productsList">
-                        <wb-foreach wb="{'table':'products','size':'3','pos':'bottom'}" wb-filter="{'active':'on'}">
+                        <wb-foreach wb="{'table':'products','size':'12','pos':'bottom'}" wb-filter="{'active':'on'}">
                         <div class="col-lg-4 col-md-4 col-sm-6 col-12 ">
                             <wb-include wb-tpl="proditem.php" />
-                        </div>                            
+                        </div>
                         </wb-foreach>
                     </div>
                     <!--shop wrapper end-->
@@ -289,5 +289,5 @@ toWishlist = Add to Wishlist
 toView = Quick view
 products = Products
 </wb-lang>
-        
-</wb-jq>   
+
+</wb-jq>
