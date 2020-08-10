@@ -108,14 +108,15 @@
                                     <button class="button" type="submit" wb-module="module=cart&add&ajax=/api/query/products/{{id}}/">{{_lang.addtocart}}</button>
                                 </form>
                             </div>
-                            <div class=" product_d_action">
+                            <!--div class=" product_d_action">
                                 <ul>
-                                    <li><a href="#" title="Add to wishlist">+ Add to Wishlist</a></li>
                                     <li><a href="#" title="Add to wishlist">+ Compare</a></li>
                                 </ul>
-                            </div>
+                            </div-->
                             <div class="product_meta">
-                                <span>Category: <a href="#">Clothing</a></span>
+                                <span>{{_lang.category}}: <a href="#" wb-tree="{'table':'catalogs','item':'categories','field':'{{tree}}','branch':'{{category}}'}">
+                                  <i>{{data.{{_sess.lang}}}}</i>
+                                </a></span>
                             </div>
 
                         </form>
@@ -160,7 +161,7 @@
                                 <div class="product_info_content">
                                     {{main.{{_sess.lang}}.data.text}}
                                 </div>
-                                
+
                                 <h4>{{_lang.ingredients}}</h4>
 
                                 <div id="accordion" role="tablist">
@@ -194,7 +195,7 @@
                                         </table>
                                     </form>
                                 </div>
-                                
+
                                 <div class="product_info_content">
                                     <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>
                                 </div>
@@ -322,17 +323,19 @@
     </div>
     <!--brand area end-->
 <wb-lang>
-[ru] 
+[ru]
 products = Продукция
 description = Описание
 ingredients = Ингредиенты
 addtocart = "Добавить в корзину"
 quantity = Количество
-[en] 
+category = Категория
+[en]
 products = Products
 description = Description
 ingredients = Ingredients
 addtocart = "Add to cart"
 quantity = Quantity
+category = Category
 </wb-lang>
 </wb-jq>

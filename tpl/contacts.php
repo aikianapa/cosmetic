@@ -5,7 +5,7 @@
 <wb-jq wb-html="main">
     <!--breadcrumbs area start-->
     <div class="breadcrumbs_area">
-        <div class="container">   
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb_content">
@@ -18,19 +18,19 @@
                     </div>
                 </div>
             </div>
-        </div>         
+        </div>
     </div>
     <!--breadcrumbs area end-->
-    
+
     <!--contact map start-->
     <div class="contact_map">
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad281f01e744099e1f895aeb3ca9483df7b2bb8dd21083f7e45d407e21f2d18b1&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
     </div>
     <!--contact map end-->
-    
+
     <!--contact area start-->
     <div class="contact_area">
-        <div class="container">   
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                    <div class="contact_message content">
@@ -40,30 +40,30 @@
                             <li><i class="fa fa-fax"></i>  {{_lang.address}} : {{_var.address}}</li>
                             <li><i class="fa fa-phone"></i> <a href="mailto:{{_var.email}}">{{_var.email}}</a></li>
                             <li><i class="fa fa-envelope-o"></i><a href="tel:{{_var.phone}}">{{_var.phone}}</a>  </li>
-                        </ul>             
-                    </div> 
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                    <div class="contact_message form">
-                        <h3>{{_lang.feedback}}</h3>   
+                        <h3>{{_lang.feedback}}</h3>
                         <form id="contact-form" method="POST">
-                            <p>  
+                            <p>
                                <label> {{_lang.yourname}}</label>
-                                <input name="name" placeholder="{{_lang.yourname}}" type="text" required> 
+                                <input name="name" placeholder="{{_lang.yourname}}" type="text" required>
                             </p>
-                            <p>       
+                            <p>
                                <label>  {{_lang.youremail}}</label>
                                 <input name="email" placeholder="{{_lang.yourname}}" type="email" required>
                             </p>
-                            <p>          
+                            <p>
                                <label>  {{_lang.subject}}</label>
                                 <input name="subject" placeholder="{{_lang.subject}}" type="text">
-                            </p>    
+                            </p>
                             <div class="contact_textarea">
                                 <label>  {{_lang.message}}</label>
-                                <textarea placeholder="{{_lang.message}}" name="message"  class="form-control2" ></textarea>     
-                            </div>   
-                            <button type="button"><i class="fa fa-envelope"></i> &nbsp; {{_lang.send}}</button>  
+                                <textarea placeholder="{{_lang.message}}" name="message"  class="form-control2" ></textarea>
+                            </div>
+                            <button type="button" data-ajax="/api/mail"><i class="fa fa-envelope"></i> &nbsp; {{_lang.send}}</button>
                             <p class="form-messege"></p>
                             <wb-lang>
                                 [ru]
@@ -81,12 +81,12 @@
                                 message = "Your Message"
                                 feedback = "Feedback"
                             </wb-lang>
-                        </form> 
+                        </form>
 
-                    </div> 
+                    </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </div>
     <!--contact area end-->
 
@@ -97,22 +97,22 @@
                 <div class="col-12">
                     <div class="brand_container owl-carousel ">
                         <div class="single_brand">
-                            <a href="contact.html#"><img src="assets/img/brand/brand1.jpg" alt=""></a>
+                            <a href="contact.html#"><img src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
                         </div>
                         <div class="single_brand">
-                            <a href="contact.html#"><img src="assets/img/brand/brand2.jpg" alt=""></a>
+                            <a href="contact.html#"><img src="{{_var.base}}/assets/img/brand/brand2.jpg" alt=""></a>
                         </div>
                         <div class="single_brand">
-                            <a href="contact.html#"><img src="assets/img/brand/brand3.jpg" alt=""></a>
+                            <a href="contact.html#"><img src="{{_var.base}}/assets/img/brand/brand3.jpg" alt=""></a>
                         </div>
                         <div class="single_brand">
-                            <a href="contact.html#"><img src="assets/img/brand/brand4.jpg" alt=""></a>
+                            <a href="contact.html#"><img src="{{_var.base}}/assets/img/brand/brand4.jpg" alt=""></a>
                         </div>
                         <div class="single_brand">
-                            <a href="contact.html#"><img src="assets/img/brand/brand5.jpg" alt=""></a>
+                            <a href="contact.html#"><img src="{{_var.base}}/assets/img/brand/brand5.jpg" alt=""></a>
                         </div>
                         <div class="single_brand">
-                            <a href="contact.html#"><img src="assets/img/brand/brand1.jpg" alt=""></a>
+                            <a href="contact.html#"><img src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
