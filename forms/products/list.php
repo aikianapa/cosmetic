@@ -15,7 +15,7 @@
 
         </div>
         <nav id="{{_form}}ListCategories" class="nav flex-column nav-chat mg-b-20">
-         
+
                             <ul class='nav nav-aside' wb-tree="{'item':'categories'}">
                                 <li class="nav-item" wb-if='"{{active}}" == "on"' >
                                     <a class="nav-link" href="#" value="{{id}}"
@@ -25,7 +25,7 @@
                                     </a>
                                 </li>
                             </ul>
-         
+
           <!--wb-foreach data-ajax="{'url':'/ajax/form/products/list/','filter':{'isgroup': 'on'},'bind':'cms.list.roles','render':'client'}">
             <span class="nav-link">
             <a href="#" data-ajax="{'url':'/ajax/form/products/list/','size':'30','filter':{ 'isgroup': { '$ne': 'on' },'role':'{{_id}}' },'bind':'cms.list.products','target':'#{{_form}}List','render':'client'}">
@@ -74,12 +74,11 @@
 
 
     <div class="list-group m-2" id="{{_form}}List">
-      <wb-foreach data-ajax="{'url':'/ajax/form/products/list/','size':'30','filter':{ 'isgroup': { '$ne': 'on' } },'bind':'cms.list.products','render':'client'}">
+      <wb-foreach data-ajax="{'url':'/ajax/form/products/list/','size':'10','filter':{ 'isgroup': { '$ne': 'on' } },'bind':'cms.list.products','render':'client'}">
         <div class="list-group-item d-flex align-items-center">
           {{#if !isgroup}}
-            <div>
-              <a href="javascript:" data-ajax="{'url':'/cms/ajax/form/products/edit/{{_id}}','html':'.products-edit-modal','modal':'#{{_form}}ModalEdit'}"
-                class="tx-13 tx-inverse tx-semibold mg-b-0">
+            <div  data-ajax="{'url':'/cms/ajax/form/products/edit/{{_id}}','html':'.products-edit-modal','modal':'#{{_form}}ModalEdit'}" class="w-100">
+              <a href="javascript:" class="tx-13 tx-inverse tx-semibold mg-b-0">
                 [{{articul}}]
                 <i class="ri-bubble-chart-line"></i> {{main.ru.data.name}}
                 <span class="badge badge-secondary"><i class="ri-flask-line"></i> {{volume}}</span>
@@ -117,6 +116,7 @@
         </div>
 
         {{#if pagination}}
+          {{#if pages - 1}}
           {{#if @last===@index}}
 
             <ul class="pagination mg-b-0 mt-3">
@@ -136,14 +136,14 @@
                 {{/if}}
               {{/each}}
             </ul>
-
+          {{/if}}
           {{/if}}
         {{/if}}
       </wb-foreach>
     </div>
+    <div class="products-edit-modal"></div>
   </div>
 
 </div>
-<div class="products-edit-modal"></div>
 
 </html>

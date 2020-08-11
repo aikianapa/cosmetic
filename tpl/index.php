@@ -359,117 +359,11 @@
     <!--banner static area end-->
 
     <!--blog area start-->
-    <section class="blog_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_title">
-                        <h2>From Our Blog</h2>
-                        <p>There are latest blog posts </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="blog_carousel blog_column3 owl-carousel">
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="{{_var.base}}/blog-details.html"><img data-src="{{_var.base}}/assets/img/blog/blog1.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <h4 class="post_title"><a href="{{_var.base}}/blog-details.html"> This is First Post For XipBlog</a></h4>
-                                    <p>Posted by Demo Hasthemes <span>Mar 25, 2020</span></p>
-                                    <footer class="blog_footer">
-                                        <a href="{{_var.base}}/blog-details.html">+ Read More</a>
-                                    </footer>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="{{_var.base}}/blog-details.html"><img data-src="{{_var.base}}/assets/img/blog/blog2.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <h4 class="post_title"><a href="{{_var.base}}/blog-details.html"> This is Secound  Post For XipBlog</a></h4>
-                                    <p>Posted by Demo Hasthemes <span>Mar 25, 2020</span></p>
-                                    <footer class="blog_footer">
-                                        <a href="{{_var.base}}/blog-details.html">+ Read More</a>
-                                    </footer>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="{{_var.base}}/blog-details.html"><img data-src="{{_var.base}}/assets/img/blog/blog3.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <h4 class="post_title"><a href="{{_var.base}}/blog-details.html"> This is Third Post For XipBlog</a></h4>
-                                    <p>Posted by Demo Hasthemes <span>Mar 25, 2020</span></p>
-                                    <footer class="blog_footer">
-                                        <a href="{{_var.base}}/blog-details.html">+ Read More</a>
-                                    </footer>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="{{_var.base}}/blog-details.html"><img data-src="{{_var.base}}/assets/img/blog/blog4.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <h4 class="post_title"><a href="{{_var.base}}/blog-details.html"> This is Fourth Post For XipBlog</a></h4>
-                                    <p>Posted by Demo Hasthemes <span>Mar 25, 2020</span></p>
-                                    <footer class="blog_footer">
-                                        <a href="{{_var.base}}/blog-details.html">+ Read More</a>
-                                    </footer>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <wb-include wb-tpl="widget.articles.inc.php" />
     <!--blog area end-->
 
     <!--brand area start-->
-    <div class="brand_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="brand_container owl-carousel ">
-                        <div class="single_brand">
-                            <a href="{{_var.base}}/"><img data-src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="{{_var.base}}/"><img data-src="{{_var.base}}/assets/img/brand/brand2.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="{{_var.base}}/"><img data-src="{{_var.base}}/assets/img/brand/brand3.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="{{_var.base}}/"><img data-src="{{_var.base}}/assets/img/brand/brand4.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="{{_var.base}}/"><img data-src="{{_var.base}}/assets/img/brand/brand5.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="{{_var.base}}/"><img data-src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <wb-include wb-tpl="widget.brands.inc.php" />
     <!--brand area end-->
 
     <!--bonique messages area start-->

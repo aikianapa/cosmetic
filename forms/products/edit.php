@@ -12,14 +12,7 @@
             <div class="modal-body pb-0">
                 <form id="{{_form}}EditForm">
                     <input type="checkbox" class="custom-control-input" name="active" id="{{_form}}ValueItemActive">
-                    <div class="form-group row">
-                        <div class="input-group col-12">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">{{_route.host}}/</span>
-                            </div>
-                            <input type="text" name="id" class="form-control" placeholder="Страница">
-                        </div>
-                    </div>
+                    <input type="hidden" name="id">
 
                     <div class="form-group row">
                         <label class="col-sm-2 form-control-label">Категория</label>
@@ -53,46 +46,46 @@
                                     <label class="form-control-label">Артикул</label>
                                     <input type="text" class="form-control" name="articul" placeholder="Артикул" required>
                                 </div>
-                                
+
                                 <div class="col-sm-6 col-lg-3">
                                     <label class="form-control-label">Цена ₽</label>
                                     <input type="text" class="form-control" name="price" placeholder="Цена ₽">
                                 </div>
-                            
+
                                 <div class="col-sm-6 col-lg-3">
                                     <label class="form-control-label">Объём</label>
                                     <input type="text" class="form-control" name="volume" placeholder="Объём">
                                 </div>
-    
+
                                 <div class="col-sm-6 col-lg-3">
                                     <label class="form-control-label">Рейтинг</label>
                                     <input type="number" min="1" max="5" class="form-control" name="rating" placeholder="Рейтинг">
-                                </div> 
+                                </div>
                             </div>
-                            
+
                             <wb-multilang name="main" wb-lang="{'ru':'Русский','en':'Английский'}">
                                 <div class="form-group row">
                                     <label class="col-sm-2 form-control-label">{{_lang.name}}</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="name" placeholder="{{_lang.name}}">
                                     </div>
-                                </div>                                
-                               
+                                </div>
+
                                 <div class="form-group row">
                                     <label class="col-sm-2 form-control-label">Тэги</label>
                                     <div class="col-sm-10">
                                         <wb-module wb="{'module':'tagsinput'}" class="form-control" name="tags" placeholder="Тэги" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group row">
                                     <div class="col-12">
                                         <wb-module wb="{'module':'jodit'}" name="text" />
                                     </div>
                                 </div>
                             </wb-multilang>
-                            
-                            
+
+
 
                         </div>
                         <div class="tab-pane fade" id="{{_form}}EditForm-tab2" role="tabpanel" aria-labelledby="{{_form}}EditForm-tab2">

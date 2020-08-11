@@ -36,11 +36,15 @@
 
 
 <div class="list-group m-2" id="{{_form}}List">
-  <wb-foreach data-ajax="{'url':'/ajax/form/blog/list/','bind':'cms.list.{{_form}}','render':'client'}">
+  <wb-foreach data-ajax="{'url':'/ajax/form/{{_form}}/list/','bind':'cms.list.{{_form}}','render':'client','sort':'date:d','size':'10'}">
     <div class="list-group-item d-flex align-items-center">
-      <div>
-        <a href="javascript:" data-ajax="{'url':'/cms/ajax/form/blog/edit/{{_id}}','html':'.blog-edit-modal'}"
-          class="tx-13 tx-inverse tx-semibold mg-b-0">{{date}}</a>
+      <div  data-ajax="{'url':'/cms/ajax/form/blog/edit/{{_id}}','html':'.blog-edit-modal'}" class="w-100">
+        <a href="javascript:" class="tx-13 tx-inverse tx-semibold mg-b-0">{{date}}</a>
+          {{#if type == "article"}}
+          <span class="badge badge-secondary"><i class="ri-group-line"></i> статья</span>
+          {{else}}
+          <span class="badge badge-primary"><i class="ri-group-line"></i> новость</span>
+          {{/if}}
         <span class="d-block tx-11 text-muted">{{lang.ru.data.header}}&nbsp;</span>
       </div>
 
@@ -70,10 +74,34 @@
         </div>
       </div>
     </div>
+    {{#if pagination}}
+      {{#if pages - 1}}
+      {{#if @last===@index}}
+
+        <ul class="pagination mg-b-0 mt-3">
+          {{#each pagination}}
+            {{#if this.label=="prev" }}
+              <li class="page-item">
+                <a class="page-link page-link-icon" data-page="{{this.page}}" href="#"><i class="fa fa-chevron-left"></i></a>
+              </li>
+              {{elseif this.label == "next"}}
+              <li class="page-item">
+                <a class="page-link page-link-icon" data-page="{{this.page}}" href="#"><i class="fa fa-chevron-right"></i></a>
+              </li>
+            {{else}}
+              <li class="page-item">
+                <a class="page-link" data-page="{{this.page}}" href="#">{{this.label}}</a>
+              </li>
+            {{/if}}
+          {{/each}}
+        </ul>
+      {{/if}}
+      {{/if}}
+    {{/if}}
+
   </wb-foreach>
 </div>
 <div class="blog-edit-modal">
-
 </div>
 <script>
 function ajaxModalShow(params, data) {

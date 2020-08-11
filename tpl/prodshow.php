@@ -293,34 +293,7 @@
     <!--product area end-->
 
     <!--brand area start-->
-    <div class="brand_area brand_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="brand_container owl-carousel ">
-                        <div class="single_brand">
-                            <a href="#"><img src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="{{_var.base}}/assets/img/brand/brand2.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="{{_var.base}}/assets/img/brand/brand3.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="{{_var.base}}/assets/img/brand/brand4.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="{{_var.base}}/assets/img/brand/brand5.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <wb-include wb-tpl="widget.brands.inc.php" />
     <!--brand area end-->
 <wb-lang>
 [ru]

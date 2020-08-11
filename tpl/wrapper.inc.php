@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bonique - Beauty & Cosmetic eCommerce HTML Template </title>
+    <title>{{header}}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -86,17 +86,17 @@
                                     <div class="mini_cart_table">
                                         <div class="cart_table_border">
                                             <div class="cart_total mt-10">
-                                                <span>total:</span>
+                                                <span>{{_lang.total}}:</span>
                                                 <span class="price mod-cart-total-sum"></span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mini_cart_footer">
                                        <div class="cart_button">
-                                            <a href="/cart"><i class="fa fa-shopping-cart"></i> View cart</a>
+                                            <a href="/cart"><i class="fa fa-shopping-cart"></i> {{_lang.viewcart}}</a>
                                         </div>
                                         <div class="cart_button">
-                                            <a href="{{_var.base}}/checkout.html"><i class="fa fa-sign-in"></i> Checkout</a>
+                                            <a href="{{_var.base}}/checkout.html"><i class="fa fa-sign-in"></i> {{_lang.checkout}}</a>
                                         </div>
 
                                     </div>
@@ -121,82 +121,6 @@
                                                <li><a href="{{data.link}}">{{name}}</a></li>
                                             </wb-foreach>
                                         </ul>
-                                </li>
-                            </ul>
-
-                            <ul class="d-none offcanvas_main_menu">
-                                <li class="menu-item-has-children active">
-                                    <a href="{{_var.base}}/">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="{{_var.base}}/">Home 1</a></li>
-                                        <li><a href="{{_var.base}}/index-2.html">Home 2</a></li>
-                                        <li><a href="{{_var.base}}/index-3.html">Home 3</a></li>
-                                        <li><a href="{{_var.base}}/index-4.html">Home 4</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{_var.base}}/">Shop</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item-has-children">
-                                            <a href="{{_var.base}}/">Shop Layouts</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="{{_var.base}}/shop.html">shop</a></li>
-                                                <li><a href="{{_var.base}}/shop-fullwidth.html">Full Width</a></li>
-                                                <li><a href="{{_var.base}}/shop-fullwidth-list.html">Full Width list</a></li>
-                                                <li><a href="{{_var.base}}/shop-right-sidebar.html">Right Sidebar </a></li>
-                                                <li><a href="{{_var.base}}/shop-right-sidebar-list.html"> Right Sidebar list</a></li>
-                                                <li><a href="{{_var.base}}/shop-list.html">List View</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="{{_var.base}}/">other Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="{{_var.base}}/cart.html">{{_lang.cart}}</a></li>
-                                                <li><a href="{{_var.base}}/checkout.html">Checkout</a></li>
-                                                <li><a href="{{_var.base}}/my-account.html">my account</a></li>
-                                                <li><a href="{{_var.base}}/404.html">Error 404</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="{{_var.base}}/">Product Types</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="{{_var.base}}/product-details.html">product details</a></li>
-                                                <li><a href="{{_var.base}}/product-sidebar.html">product sidebar</a></li>
-                                                <li><a href="{{_var.base}}/product-grouped.html">product grouped</a></li>
-                                                <li><a href="{{_var.base}}/variable-product.html">product variable</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{_var.base}}/">blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="{{_var.base}}/blog.html">blog</a></li>
-                                        <li><a href="{{_var.base}}/blog-details.html">blog details</a></li>
-                                        <li><a href="{{_var.base}}/blog-fullwidth.html">blog fullwidth</a></li>
-                                        <li><a href="{{_var.base}}/blog-sidebar.html">blog sidebar</a></li>
-                                    </ul>
-
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{_var.base}}/">pages </a>
-                                    <ul class="sub-menu">
-                                        <li><a href="{{_var.base}}/about.html">About Us</a></li>
-                                        <li><a href="{{_var.base}}/services.html">services</a></li>
-                                        <li><a href="{{_var.base}}/faq.html">Frequently Questions</a></li>
-                                        <li><a href="{{_var.base}}/contact.html">contact</a></li>
-                                        <li><a href="{{_var.base}}/login.html">login</a></li>
-                                        <li><a href="{{_var.base}}/404.html">Error 404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{_var.base}}/my-account.html">my account</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{_var.base}}/about.html">about Us</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{_var.base}}/contact.html"> Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -311,17 +235,17 @@
                                                         <span class="price">$125.00</span>
                                                     </div-->
                                                     <div class="cart_total mt-10">
-                                                        <span>total:</span>
+                                                        <span>{{_lang.total}}:</span>
                                                         <span class="price mod-cart-total-sum"></span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mini_cart_footer">
                                                <div class="cart_button">
-                                                    <a href="/cart"><i class="fa fa-shopping-cart"></i> View cart</a>
+                                                    <a href="/cart"><i class="fa fa-shopping-cart"></i> {{_lang.viewcart}}</a>
                                                 </div>
                                                 <div class="cart_button">
-                                                    <a href="{{_var.base}}/checkout.html"><i class="fa fa-sign-in"></i> Checkout</a>
+                                                    <a href="{{_var.base}}/checkout.html"><i class="fa fa-sign-in"></i> {{_lang.checkout}}</a>
                                                 </div>
 
                                             </div>
@@ -682,6 +606,9 @@ phone = "Телефон"
 email = "Эл.почта"
 address = "Адрес"
 home = "Главная"
+total = "Итого"
+viewcart = "В корзину"
+checkout = "Оформить"
 [en]
 cart = "Cart"
 menu = "Menu"
@@ -689,6 +616,9 @@ phone = "Phone"
 email = "Email"
 address = "Address"
 home = "Home"
+total = "Total"
+viewcart = "View cart"
+checkout = "Checkout"
 </wb-lang>
 
 

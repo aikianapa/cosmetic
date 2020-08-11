@@ -3,7 +3,7 @@
 <wb-include wb-tpl="wrapper.inc.php" />
 
 <wb-jq wb-html="main">
-   
+
     <!--breadcrumbs area start-->
     <div class="breadcrumbs_area">
         <div class="container">
@@ -20,7 +20,7 @@
         </div>
     </div>
     <!--breadcrumbs area end-->
-    
+
     <!--blog area start-->
     <div class="blog_page_section mb-60">
         <div class="container">
@@ -30,26 +30,12 @@
                         <div class="row">
                            <wb-foreach wb="table=blog&size=6&pos=bottom&sort=date:d" wb-filter="{'active':'on','type':'article'}">
                             <div class="col-lg-4 col-md-6">
-                                <article class="single_blog">
-                                   <wb-var link="/article/{{id}}/{{wbFurlGenerate({{lang.{{_sess.lang}}.data.header}})}}/" />
-                                    <figure>
-                                        <div class="blog_thumb">
-                                            <a href="{{_var.link}}"><img data-src="/thumbc/450x340/src/{{images.0.img}}" alt=""></a>
-                                        </div>
-                                        <figcaption class="blog_content">
-                                           <h4 class="post_title"><a href="{{_var.link}}">{{lang.{{_sess.lang}}.data.header}}</a></h4>
-                                           <p>{{_lang.posted}} <span>{{date("d.m.Y",strtotime({{date}}))}}</span></p>
-                                           <footer class="blog_footer">
-                                                <a href="{{_var.link}}">+ {{_lang.readmore}}</a>
-                                            </footer>
-                                        </figcaption>
-                                    </figure>
-                                </article>
+                                <wb-include wb-tpl="artitem.inc.php" />
                             </div>
                             </wb-foreach>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-3 col-md-12">
                     <div class="blog_sidebar_widget">
                         <div class="widget_list widget_search">
@@ -154,36 +140,9 @@
         </div>
     </div>
     <!--blog area end-->
-   
+
    <!--brand area start-->
-    <div class="brand_area brand_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="brand_container owl-carousel ">
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand2.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand3.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand4.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand5.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <wb-include wb-tpl="widget.brands.inc.php" />
     <!--brand area end-->
 <wb-lang>
     [ru]

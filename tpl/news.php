@@ -3,7 +3,7 @@
 <wb-include wb-tpl="wrapper.inc.php" />
 
 <wb-jq wb-html="main">
-   
+
     <!--breadcrumbs area start-->
     <div class="breadcrumbs_area">
         <div class="container">
@@ -20,7 +20,7 @@
         </div>
     </div>
     <!--breadcrumbs area end-->
-    
+
     <!--blog area start-->
     <div class="blog_page_section mb-60">
         <div class="container">
@@ -49,7 +49,7 @@
                             </wb-foreach>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-3 col-md-12">
                     <div class="blog_sidebar_widget">
                         <div class="widget_list widget_search">
@@ -154,36 +154,9 @@
         </div>
     </div>
     <!--blog area end-->
-   
+
    <!--brand area start-->
-    <div class="brand_area brand_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="brand_container owl-carousel ">
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand2.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand3.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand4.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand5.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="blog.html#"><img data-src="{{_var.base}}/assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <wb-include wb-tpl="widget.brands.inc.php" />
     <!--brand area end-->
 <wb-lang>
     [ru]
