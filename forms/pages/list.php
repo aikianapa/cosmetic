@@ -36,7 +36,7 @@
 
 
 <div class="list-group m-2" id="{{_form}}List">
-  <wb-foreach data-ajax="{'url':'/ajax/form/pages/list/','bind':'cms.list.{{_form}}','render':'client','size':'10'}">
+  <wb-foreach data-ajax="{'url':'/ajax/form/pages/list/','bind':'cms.list.{{_form}}','render':'client','size':'{{_sett.page_size}}'}">
     <div class="list-group-item d-flex align-items-center">
       <div class="w-100" data-ajax="{'url':'/cms/ajax/form/pages/edit/{{_id}}','html':'.pages-edit-modal'}">
         <a href="javascript:"
@@ -70,32 +70,10 @@
         </div>
       </div>
     </div>
-    {{#if pagination}}
-      {{#if pages - 1}}
-      {{#if @last===@index}}
-
-        <ul class="pagination mg-b-0 mt-3">
-          {{#each pagination}}
-            {{#if this.label=="prev" }}
-              <li class="page-item">
-                <a class="page-link page-link-icon" data-page="{{this.page}}" href="#"><i class="fa fa-chevron-left"></i></a>
-              </li>
-              {{elseif this.label == "next"}}
-              <li class="page-item">
-                <a class="page-link page-link-icon" data-page="{{this.page}}" href="#"><i class="fa fa-chevron-right"></i></a>
-              </li>
-            {{else}}
-              <li class="page-item">
-                <a class="page-link" data-page="{{this.page}}" href="#">{{this.label}}</a>
-              </li>
-            {{/if}}
-          {{/each}}
-        </ul>
-      {{/if}}
-      {{/if}}
-    {{/if}}
-
   </wb-foreach>
+  <wb-jq wb="{'append':'#{{_form}}List template','render':'client'}" >
+    <wb-snippet wb-name="pagination"/>
+  </wb-jq>
 </div>
 <div class="pages-edit-modal">
 

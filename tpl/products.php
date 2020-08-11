@@ -265,7 +265,7 @@
                     </div>
                      <!--shop toolbar end-->
                      <div class="row shop_wrapper" id="productsList">
-                        <wb-foreach wb="{'table':'products','size':'12','pos':'bottom'}" wb-filter="{'active':'on'}">
+                        <wb-foreach wb="{'table':'products','size':'{{_sett.page_size}}','pos':'bottom'}" wb-filter="{'active':'on'}">
                         <div class="col-lg-4 col-md-4 col-sm-6 col-12 ">
                             <wb-include wb-tpl="proditem.php" />
                         </div>

@@ -28,7 +28,7 @@
                 <div class="col-lg-9 col-md-12">
                     <div class="blog_wrapper">
                         <div class="row">
-                           <wb-foreach wb="table=blog&size=6&pos=bottom&sort=date:d" wb-filter="{'active':'on','type':'news'}">
+                           <wb-foreach wb="table=blog&size={{_sett.page_size}}&pos=bottom&sort=date:d" wb-filter="{'active':'on','type':'news'}">
                             <div class="col-lg-4 col-md-6">
                                 <article class="single_blog">
                                    <wb-var link="/article/{{id}}/{{wbFurlGenerate({{lang.{{_sess.lang}}.data.header}})}}/" />

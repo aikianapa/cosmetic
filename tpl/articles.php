@@ -28,7 +28,7 @@
                 <div class="col-lg-9 col-md-12">
                     <div class="blog_wrapper">
                         <div class="row">
-                           <wb-foreach wb="table=blog&size=6&pos=bottom&sort=date:d" wb-filter="{'active':'on','type':'article'}">
+                           <wb-foreach wb="table=blog&size={{_sett.page_size}}&pos=bottom&sort=date:d" wb-filter="{'active':'on','type':'article'}">
                             <div class="col-lg-4 col-md-6">
                                 <wb-include wb-tpl="artitem.inc.php" />
                             </div>

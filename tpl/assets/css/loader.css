@@ -6,7 +6,7 @@ body.loader * {
      display:none;
 }
 body.loader #loader {
-    background-color: #CCC;
+    background-color: #f8f3ef;
     position: static;
     width: 100vw;
     height: 100vh;
@@ -22,8 +22,11 @@ body.loader #loader * {
   display: inherit;
 }
 
+body #loader * {
+  display: none;
+}
+
 body.loader #loader .lds-spinner {
-  color: official;
   display: inline-block;
   position: absolute;
   width: 80px;
@@ -43,7 +46,7 @@ body.loader #loader .lds-spinner {
   width: 6px;
   height: 18px;
   border-radius: 20%;
-  background: #fff;
+  background: #000;
 }
 .lds-spinner div:nth-child(1) {
   transform: rotate(0deg);
