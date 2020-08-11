@@ -20,7 +20,9 @@
 </head>
 
 <body class="loader">
-    <div id="loader"></div>
+    <div id="loader">
+        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
     <!--header area start-->
     <!--offcanvas menu area start-->
     <div class="off_canvars_overlay">
