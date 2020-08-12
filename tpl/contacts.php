@@ -24,7 +24,7 @@
 
     <!--contact map start-->
     <div class="contact_map">
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad281f01e744099e1f895aeb3ca9483df7b2bb8dd21083f7e45d407e21f2d18b1&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+      <script type="wbapp" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad281f01e744099e1f895aeb3ca9483df7b2bb8dd21083f7e45d407e21f2d18b1&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
     </div>
     <!--contact map end-->
 
