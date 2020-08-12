@@ -19,9 +19,9 @@
     <wb-snippet name="bootstrap" />
 </head>
 
-<body class="loader">
-    <div id="loader">
-    </div>
+<body>
+    <!--div id="loader">
+    </div-->
     <!--header area start-->
     <!--offcanvas menu area start-->
     <div class="off_canvars_overlay">
