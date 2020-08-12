@@ -21,7 +21,6 @@
 
 <body class="loader">
     <div id="loader">
-        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div>
     <!--header area start-->
     <!--offcanvas menu area start-->
